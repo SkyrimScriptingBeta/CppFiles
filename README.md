@@ -1,4 +1,4 @@
-# `C++` Files
+# `C++` files
 
 Mrowr Purr's common C++ files.
 
