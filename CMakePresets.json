@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 6,
   "configurePresets": [
     {
       "name": "base",
@@ -19,16 +19,26 @@
       }
     },
     {
-      "name": "debug",
+      "name": "Debug",
       "inherits": ["base"],
       "displayName": "Debug",
       "cacheVariables": { "CMAKE_BUILD_TYPE": "Debug" }
     },
     {
-      "name": "release",
+      "name": "Release",
       "inherits": ["base"],
       "displayName": "Release",
       "cacheVariables": { "CMAKE_BUILD_TYPE": "Release" }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "Debug",
+      "configurePreset": "Debug"
+    },
+    {
+      "name": "Release",
+      "configurePreset": "Release"
     }
   ]
 }
